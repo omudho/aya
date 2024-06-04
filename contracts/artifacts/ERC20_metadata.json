@@ -8,76 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_symbol",
-						"type": "string"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "allowance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -90,12 +26,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "decimals",
+				"name": "banker",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "address",
 						"name": "",
-						"type": "uint8"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -105,7 +41,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "owner",
 						"type": "address"
 					},
 					{
@@ -114,68 +50,16 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mint",
+				"name": "setSomeonesBalance",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "receiver",
 						"type": "address"
 					},
 					{
@@ -185,42 +69,7 @@
 					}
 				],
 				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -238,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/contract_ERC20.sol": "ERC20"
+			"contracts/Constructor.sol": "ERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -252,12 +101,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/contract_ERC20.sol": {
-			"keccak256": "0xdb709ab60e5e1de0caf97171fdebea064a8b5d58b395bfa098e8426fc17c1021",
+		"contracts/Constructor.sol": {
+			"keccak256": "0x80972ce4d877b9595f69bdb5adca964b105ffd7c0dc10355f956548a4c73ea0d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c645a7bd955cf93263f5c9f0e1962169f8a79c6ee5a1caab9e360eb1147742b9",
-				"dweb:/ipfs/QmZDGzdKBdFZFrMPq5e1TyoZeZtxuneGwcf2tSXt5mYEtR"
+				"bzz-raw://0011c157286aef71e2b96590ea8431e5b1cbd805d72be2f84861f2576670e0bb",
+				"dweb:/ipfs/QmdQs1dtiwi4TQz8koQnXKn8RpfzqDRWmikx9rkKHag9gr"
 			]
 		}
 	},
